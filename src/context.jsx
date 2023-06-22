@@ -9,9 +9,9 @@ export const useGlobalContext = () => useContext(GlobalContext);
 
 const AppContext = ({ children}) => { 
     const [name, setName] = useState("Angel");
-    return<GlobalContext.provider value={{name, setName}}>
+    return<GlobalContext.Provider value={{name, setName}}>
             { children}
-        </GlobalContext.provider>
+        </GlobalContext.Provider>
     
 }
 export default AppContext
